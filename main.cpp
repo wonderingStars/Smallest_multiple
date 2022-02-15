@@ -4,36 +4,38 @@ using namespace std;
 
 int main() {
 
+    for (int i = 0; i <= 9999999999; i++) {
 
-
-
+        FindSmallestNUmber(i);
+    }
     return 0;
 }
 
 
-int FindSmallestNUmber(int number){
+int FindSmallestNUmber(int number) {
 
     int counter = 0;
 
-    for(int i = 1 ; i <= 20 ; i++ ){
+    for (int i = 1; i <= 20; i++) {
 
 
-        if(number % i == 0 ){
+        if (number % i == 0) {
             counter++;
-
-        }else{
-             counter = 0;
+          //  cout << counter << endl;
+        } else {
+            counter = 0;
             return -1;
         }
 
-        if(counter == 20){
+        if (counter == 20) {
 
-            cout<< number << endl;
+            cout << number << endl;
+            system("pause>0");
             return true;
         }
 
-    return -1;
+
     }
 
-
+    return -1;
 }
